@@ -1,0 +1,9 @@
+page:
+  siteTitle: Emanote Template
+  siteName: emanote-template
+
+template:
+  theme: red
+  sidebar:
+    collapsed: false
+  urlStrategy: pretty

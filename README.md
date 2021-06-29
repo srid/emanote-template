@@ -1,0 +1,2 @@
+# emanote-template
+
