@@ -16,7 +16,8 @@
     ],
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
-    "files.autoSaveDelay": 500
+    "files.autoSaveDelay": 500,
+    "pasteImage.insertPattern": "![[${imageFilePath}]]"
     // If use Git, these might be interesting:
     // "git.autofetch": true,
     // "git.postCommitCommand": "push"
