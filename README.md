@@ -1,6 +1,6 @@
 # emanote-template
 
-Notebook template for https://github.com/srid/emanote - to easily get started with publishing GitHub Pages website using Emanote out of plain-text notes.
+Notebook template for https://github.com/srid/emanote - to easily get started with publishing a GitHub Pages website using Emanote out of plain-text Markdown notes.
 
 ## Using this template
 
