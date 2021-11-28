@@ -1,6 +1,6 @@
 # emanote-template
 
-Notebook template for [Emanote](https://github.com/srid/emanote), with VSCode support, to easily get started with publishing a GitHub Pages website using Emanote out of plain-text Markdown notes.
+A template repository to create your own Markdown-based [Emanote](https://github.com/srid/emanote) notebook with VSCode support, as well as to publish it to GitHub Pages.
 
 See https://note.ema.srid.ca/resources/emanote-template for details.
 
