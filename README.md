@@ -13,3 +13,17 @@ Click the "Use this template" green button on Github, and in the resulting repos
 3. Delete `README.md` (this file)
 
 Checkout [examples](https://emanote.srid.ca/examples) and [demo](https://emanote.srid.ca/demo) for next steps.
+
+## Running using Nix
+
+To start the Emanote live server using Nix:
+
+```sh
+nix run
+```
+
+To update Emanote version in flake.nix:
+
+```sh
+nix flake lock --update-input emanote
+```
