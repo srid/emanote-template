@@ -19,6 +19,7 @@ Checkout [examples](https://emanote.srid.ca/examples) and [demo](https://emanote
 To start the Emanote live server using Nix:
 
 ```sh
+# If you using VSCode, you can also: Ctrl+Shift+B
 nix run
 ```
 
