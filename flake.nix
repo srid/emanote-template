@@ -21,12 +21,12 @@
         live = rec {
           type = "app";
           # '' is required for escaping ${} in nix
-          script = pkgs.writers.writeBash "emanoteRun.sh" ''
+          script = pkgs.writeShellApplication { name = "emanoteRun.sh"; text = ''
             set -xe
             export PORT="''${EMANOTE_PORT:-7072}"
-            ${emanote.defaultPackage.${system}}/bin/emanote run --port $PORT
-          '';
-          program = builtins.toString script;
+            ${emanote.defaultPackage.${system}}/bin/emanote run --port "$PORT"
+          ''; };
+          program = "${script}/bin/emanoteRun.sh";
         };
       };
     };
