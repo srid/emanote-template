@@ -2,11 +2,8 @@
   inputs = {
     emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
-    flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
+    flake-utils.follows = "emanote/flake-utils";
+    flake-compat.follows = "emanote/flake-compat";
   };
 
   outputs = { self, flake-utils, emanote, nixpkgs, ... }:
