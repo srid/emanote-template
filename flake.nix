@@ -3,21 +3,21 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-21.11";
     emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
+    flake-utils.url = "github:numtide/flake-utils";
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
     };
   };
 
-  outputs = { self, flake-compat, emanote, nixpkgs }:
+  outputs = { self, flake-utils, emanote, nixpkgs, ... }:
+    flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" "aarch64-darwin" "aarch64-linux" ] (system:
     let
-      system = "aarch64-darwin";  # FIXME: all platforms
       pkgs = nixpkgs.legacyPackages.${system};
     in
-    {
-      defaultApp.${system} = self.apps.${system}.live;
-      defaultPackage.${system} = self.website;
-      apps."${system}" = {
+    rec {
+      defaultApp = apps.live;
+      apps = {
         live = rec {
           type = "app";
           # '' is required for escaping ${} in nix
@@ -29,5 +29,8 @@
           program = "${script}/bin/emanoteRun.sh";
         };
       };
-    };
+      devShell = pkgs.mkShell {
+        buildInputs = [ pkgs.nixpkgs-fmt ];
+      };
+    });
 }

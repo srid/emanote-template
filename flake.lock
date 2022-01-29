@@ -148,6 +148,21 @@
         "type": "github"
       }
     },
+    "flake-utils_4": {
+      "locked": {
+        "lastModified": 1642700792,
+        "narHash": "sha256-XqHrk7hFb+zBvRg6Ghl+AZDq03ov6OshJLiSWOoX5es=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "846b2ae0fc4cc943637d3d1def4454213e203cba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "heist": {
       "flake": false,
       "locked": {
@@ -232,6 +247,7 @@
       "inputs": {
         "emanote": "emanote",
         "flake-compat": "flake-compat_3",
+        "flake-utils": "flake-utils_4",
         "nixpkgs": [
           "emanote",
           "nixpkgs"
