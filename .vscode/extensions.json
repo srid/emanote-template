@@ -10,6 +10,8 @@
 		"mdickin.markdown-shortcuts",
 		"mushan.vscode-paste-image",
 		"sean10.markless-sean10",
-		"gruntfuggly.todo-tree"
+		"gruntfuggly.todo-tree",
+		"bbenoist.nix",
+		"arrterian.nix-env-selector"
 	]
 }
