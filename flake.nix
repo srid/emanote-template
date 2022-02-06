@@ -4,6 +4,8 @@
     nixpkgs.follows = "emanote/nixpkgs";
     flake-utils.follows = "emanote/flake-utils";
     flake-compat.follows = "emanote/flake-compat";
+
+    # Hercules CI
     hercules-ci-effects.url = "github:hercules-ci/hercules-ci-effects";
     flake-compat-ci.url = "github:hercules-ci/flake-compat-ci";
   };
