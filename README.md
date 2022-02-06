@@ -9,8 +9,12 @@ See https://emanote.srid.ca/resources/emanote-template for details.
 Click the "Use this template" green button on Github, and in the resulting repository make the following modifications,
 
 1. Change `content/index.yaml` to use your site's title (and set the same in `content/index.md`)
-2. Change `.deploy/github/index.yaml` to change the `baseUrl` (if your repository is named differently or you are using a CNAME). If you are using CNAME (with no sub-path), then you may get rid of the `.deploy/github` layer entirely (be sure to update `publish.yaml` accordingly).
-3. Start adding notes to `./content` (where all notes should live)
+1. Set a suitable edit URL in `content/templates/hooks/after-note.tpl`
+1. Start adding notes to `./content` (where all notes should live)
+
+If deploying using GitHub Pages, also:
+
+1. Change `.deploy/github/index.yaml` to change the `baseUrl` (if your repository is named differently or you are using a CNAME). If you are using CNAME (with no sub-path), then you may get rid of the `.deploy/github` layer entirely (be sure to update `publish.yaml` accordingly).
 
 Checkout [examples](https://emanote.srid.ca/examples) and [demo](https://emanote.srid.ca/demo) for next steps.
 
