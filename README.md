@@ -28,3 +28,16 @@ To update Emanote version in flake.nix:
 ```sh
 nix flake lock --update-input emanote
 ```
+
+To build the static website via Nix:
+
+```sh
+nix build -o result
+```
+
+## CI
+
+Two forms of CI are provided:
+
+- GitHub Actions/Pages: see `.github/workflows/publish.yaml`
+- Hercules CI via Nix: see `*.nix`

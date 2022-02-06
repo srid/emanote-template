@@ -18,6 +18,7 @@
         in
         rec {
           defaultApp = apps.live;
+          defaultPackage = website;
           apps = {
             live = rec {
               type = "app";
@@ -33,10 +34,19 @@
               program = "${script}/bin/emanoteRun.sh";
             };
           };
+          website =
+            pkgs.runCommand "emanote-website" { }
+              ''
+                mkdir $out
+                ${emanote.defaultPackage.${system}}/bin/emanote \
+                  gen $out
+              '';
           devShell = pkgs.mkShell {
             buildInputs = [ pkgs.nixpkgs-fmt ];
           };
-        }) // {
+        }
+      ) //
+    {
       # Hercules CI support: https://hercules-ci.com/
       ciNix = args@{ src }: inputs.flake-compat-ci.lib.recurseIntoFlakeWith {
         flake = self;
