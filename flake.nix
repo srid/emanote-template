@@ -39,7 +39,7 @@
         # Hercules CI support: https://hercules-ci.com/
         ciNix = args@{ src }: inputs.flake-compat-ci.lib.recurseIntoFlakeWith {
           flake = self;
-          systems = [ "x86_64-linux" ];
+          systems = [ system ];
           effectsArgs = args;
         };
       });
