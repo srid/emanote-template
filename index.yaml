@@ -8,4 +8,5 @@ template:
   theme: red
   sidebar:
     collapsed: false
+  # If you are hosting on GitLab Pages, you may want to remove this.
   urlStrategy: pretty

@@ -1,5 +1,5 @@
 # Emanote Template
 
-A Git repo for users to get started with [Emanote], with GitHub Pages deployment. For details, see https://github.com/srid/emanote-template.
+A templating for your next [Emanote] website for hosting in [[GitHub Pages]], editing in [Visual Studio Code](https://emanote.srid.ca/resources/vscode), etc.. For details, see https://github.com/srid/emanote-template.
 
-[Emanote]: https://note.ema.srid.ca/
+[Emanote]: https://emanote.srid.ca/
