@@ -28,7 +28,7 @@
                 text = ''
                   set -xe
                   export PORT="''${EMANOTE_PORT:-7072}"
-                  ${emanote.defaultPackage.${system}}/bin/emanote run --port "$PORT"
+                  cd ./content && ${emanote.defaultPackage.${system}}/bin/emanote run --port "$PORT"
                 '';
               };
               program = "${script}/bin/emanoteRun.sh";
@@ -38,7 +38,7 @@
             pkgs.runCommand "emanote-website" { }
               ''
                 mkdir $out
-                ${emanote.defaultPackage.${system}}/bin/emanote \
+                cd ${self}/content && ${emanote.defaultPackage.${system}}/bin/emanote \
                   gen $out
               '';
           devShell = pkgs.mkShell {

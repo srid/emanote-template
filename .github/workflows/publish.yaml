@@ -16,7 +16,7 @@ jobs:
             -e LANG=C.UTF-8 -e LC_ALL=C.UTF-8 \
             --tmpfs /tmp \
             -v $PWD:/data sridca/emanote \
-            emanote --layers "/data;/data/.deploy/github" gen /data/output.docker
+            emanote --layers "/data/content;/data/.deploy/github" gen /data/output.docker
           cp -r output.docker output  # Ditch docker created root-owned files
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
