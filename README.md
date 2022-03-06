@@ -1,6 +1,6 @@
 # emanote-template
 
-A template repository to create your own Markdown-based [Emanote](https://github.com/srid/emanote) notebook with VSCode support, as well as to publish it to GitHub Pages.
+A template repository to create your own Markdown-based [Emanote](https://github.com/srid/emanote) notebook with [Visual Studio Code](https://code.visualstudio.com/) support, as well as to publish it to GitHub Pages.
 
 See https://emanote.srid.ca/resources/emanote-template for details.
 
