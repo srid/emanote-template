@@ -13,10 +13,10 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in
         rec {
-          defaultApp = apps.live;
-          defaultPackage = website;
+          defautPackage = packages.default;
+          defaultApp = apps.default;
           apps = {
-            live = rec {
+            default = rec {
               type = "app";
               # '' is required for escaping ${} in nix
               script = pkgs.writeShellApplication {
@@ -30,26 +30,28 @@
               program = "${script}/bin/emanoteRun.sh";
             };
           };
-          website =
-            let
-              configFile = (pkgs.formats.yaml { }).generate "emanote-index.yaml" {
-                template = {
-                  baseUrl = "/";
-                  urlStrategy = "direct";
+          packages = {
+            default =
+              let
+                configFile = (pkgs.formats.yaml { }).generate "emanote-index.yaml" {
+                  template = {
+                    baseUrl = "/";
+                    urlStrategy = "direct";
+                  };
                 };
-              };
-              configDir = pkgs.runCommand "emanote-deploy-layer" { } ''
-                mkdir -p $out
-                cp ${configFile} $out/index.yaml
-              '';
-            in
-            pkgs.runCommand "emanote-static-website" { }
-              ''
-                mkdir $out
-                ${emanote.defaultPackage.${system}}/bin/emanote \
-                --layers "${configDir};${self}/content" \
-                  gen $out
-              '';
+                configDir = pkgs.runCommand "emanote-deploy-layer" { } ''
+                  mkdir -p $out
+                  cp ${configFile} $out/index.yaml
+                '';
+              in
+              pkgs.runCommand "emanote-static-website" { }
+                ''
+                  mkdir $out
+                  ${emanote.defaultPackage.${system}}/bin/emanote \
+                  --layers "${configDir};${self}/content" \
+                    gen $out
+                '';
+          };
           devShell = pkgs.mkShell {
             buildInputs = [ pkgs.nixpkgs-fmt ];
           };
