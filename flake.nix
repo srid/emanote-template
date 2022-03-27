@@ -3,7 +3,7 @@
     emanote.url = "github:srid/emanote/master";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-utils.follows = "emanote/flake-utils";
-    flake-compat.follows = "emanote/flake-compat";
+    flake-compat.follows = "emanote/flake-compat"; # Used in flake-compat.nix
   };
 
   outputs = { self, flake-utils, emanote, nixpkgs, ... }@inputs:
@@ -31,10 +31,23 @@
             };
           };
           website =
-            pkgs.runCommand "emanote-website" { }
+            let
+              configFile = (pkgs.formats.yaml { }).generate "emanote-index.yaml" {
+                template = {
+                  baseUrl = "/";
+                  urlStrategy = "direct";
+                };
+              };
+              configDir = pkgs.runCommand "emanote-deploy-layer" { } ''
+                mkdir -p $out
+                cp ${configFile} $out/index.yaml
+              '';
+            in
+            pkgs.runCommand "emanote-static-website" { }
               ''
                 mkdir $out
-                cd ${self}/content && ${emanote.defaultPackage.${system}}/bin/emanote \
+                ${emanote.defaultPackage.${system}}/bin/emanote \
+                --layers "${configDir};${self}/content" \
                   gen $out
               '';
           devShell = pkgs.mkShell {

@@ -36,7 +36,9 @@ nix flake lock --update-input emanote
 To build the static website via Nix:
 
 ```sh
-nix build -o result
+nix build -o ./result
+# Then test it:
+nix run nixpkgs#nodePackages.live-server -- ./result
 ```
 
 ## CI
