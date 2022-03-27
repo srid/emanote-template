@@ -1,13 +1,9 @@
 {
   inputs = {
-    emanote.url = "github:srid/emanote";
+    emanote.url = "github:srid/emanote/master";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-utils.follows = "emanote/flake-utils";
     flake-compat.follows = "emanote/flake-compat";
-
-    # Hercules CI
-    hercules-ci-effects.url = "github:hercules-ci/hercules-ci-effects";
-    flake-compat-ci.url = "github:hercules-ci/flake-compat-ci";
   };
 
   outputs = { self, flake-utils, emanote, nixpkgs, ... }@inputs:
@@ -48,10 +44,6 @@
       ) //
     {
       # Hercules CI support: https://hercules-ci.com/
-      ciNix = args@{ src }: inputs.flake-compat-ci.lib.recurseIntoFlakeWith {
-        flake = self;
-        systems = [ "x86_64-linux" ];
-        effectsArgs = args;
-      };
+      herculesCI.ciSystems = [ "x86_64-linux" ];
     };
 }
