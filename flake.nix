@@ -1,6 +1,7 @@
 {
   inputs = {
     emanote.url = "github:srid/emanote/master";
+    ema.follows = "emanote/ema";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-utils.follows = "emanote/flake-utils";
     flake-compat.follows = "emanote/flake-compat"; # Used in flake-compat.nix
