@@ -1,4 +1,7 @@
 {
+  nixConfig.extra-substituters = "https://srid.cachix.org";
+  nixConfig.extra-trusted-public-keys = "srid.cachix.org-1:MTQ6ksbfz3LBMmjyPh0PLmos+1x+CdtJxA/J2W+PQxI=";
+
   inputs = {
     emanote.url = "github:srid/emanote/master";
     nixpkgs.follows = "emanote/nixpkgs";
