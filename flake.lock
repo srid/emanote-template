@@ -48,16 +48,19 @@
       "inputs": {
         "ema": "ema_2",
         "flake-compat": [
+          "emanote",
           "ema",
           "flake-compat"
         ],
         "flake-utils": [
+          "emanote",
           "ema",
           "flake-utils"
         ],
         "heist": "heist",
         "lint-utils": "lint-utils_3",
         "nixpkgs": [
+          "emanote",
           "ema",
           "nixpkgs"
         ],
