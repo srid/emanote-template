@@ -6,9 +6,15 @@ page:
 
 template:
   theme: red
+
   # Uncomment this to get neuron-style pages
   # name: /templates/layouts/note
+  # layout:
+  #   note:
+  #     containerClass: container mx-auto max-w-screen-lg
+
   sidebar:
     collapsed: false
+
   # If you are hosting on GitLab Pages, you may want to remove this.
   urlStrategy: pretty
