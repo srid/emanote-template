@@ -18,6 +18,9 @@
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
     "files.autoSaveDelay": 500,
+    "files.associations": {
+        "*.tpl": "html"
+    },
     "pasteImage.insertPattern": "![[${imageFilePath}]]",
     "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix"
     // If use Git, these might be interesting:

@@ -3,3 +3,4 @@
 *.md linguist-documentation=false
 *.md text
 flake.lock linguist-generated=true
+*.tpl linguist-language=HTML
