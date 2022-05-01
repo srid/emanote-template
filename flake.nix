@@ -4,7 +4,7 @@
 
   inputs = {
     emanote.url = "github:srid/emanote/master";
-    ema.url = "github:srid/ema/multisite"; # To workaround follows bug
+    # ema.url = "github:srid/ema/multisite"; # To workaround follows bug
     nixpkgs.follows = "emanote/nixpkgs";
     flake-utils.follows = "emanote/flake-utils";
     flake-compat.follows = "emanote/flake-compat"; # Used in flake-compat.nix
