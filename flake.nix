@@ -7,7 +7,6 @@
     # ema.url = "github:srid/ema/multisite"; # To workaround follows bug
     nixpkgs.follows = "emanote/nixpkgs";
     flake-utils.follows = "emanote/flake-utils";
-    flake-compat.follows = "emanote/flake-compat"; # Used in flake-compat.nix
   };
 
   outputs = { self, flake-utils, emanote, nixpkgs, ... }@inputs:
@@ -60,9 +59,5 @@
             buildInputs = [ pkgs.nixpkgs-fmt ];
           };
         }
-      ) //
-    {
-      # Hercules CI support: https://hercules-ci.com/
-      herculesCI.ciSystems = [ "x86_64-linux" ];
-    };
+      );
 }

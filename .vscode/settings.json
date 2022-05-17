@@ -21,8 +21,7 @@
     "files.associations": {
         "*.tpl": "html"
     },
-    "pasteImage.insertPattern": "![[${imageFilePath}]]",
-    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix"
+    "pasteImage.insertPattern": "![[${imageFilePath}]]"
     // If use Git, these might be interesting:
     // "git.autofetch": true,
     // "git.postCommitCommand": "push"
