@@ -1,6 +1,6 @@
 {
-  nixConfig.extra-substituters = "https://srid.cachix.org";
-  nixConfig.extra-trusted-public-keys = "srid.cachix.org-1:MTQ6ksbfz3LBMmjyPh0PLmos+1x+CdtJxA/J2W+PQxI=";
+  nixConfig.extra-substituters = "https://cache.garnix.io";
+  nixConfig.extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
 
   inputs = {
     emanote.url = "github:srid/emanote/master";
