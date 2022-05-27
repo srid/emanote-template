@@ -41,9 +41,6 @@ nix build -o ./result
 nix run nixpkgs#nodePackages.live-server -- ./result
 ```
 
-## CI
+## GitHub Pages
 
-Two forms of CI are provided:
-
-- GitHub Actions/Pages: see `.github/workflows/publish.yaml`
-- Hercules CI via Nix: see `*.nix`
+GitHub Actions CI is responsible for deploying to GitHub Pages. See `.github/workflows/publish.yaml`.
