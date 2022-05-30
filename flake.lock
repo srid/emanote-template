@@ -37,16 +37,16 @@
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1653935565,
-        "narHash": "sha256-SlgDdhcdedypEYlEj/JF4B9IYQRbQE014bL4AahOo1E=",
+        "lastModified": 1653937478,
+        "narHash": "sha256-N7R81eYENOkM4d+uziZP3WY/IConNveYhq1xGMXlglw=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "7f104d92720ff4a2247872c571788e3002125011",
+        "rev": "5b3d747ccd241fd8a7fb2bedfd468e065507289d",
         "type": "github"
       },
       "original": {
         "owner": "srid",
-        "ref": "master",
+        "ref": "flake-module-website",
         "repo": "emanote",
         "type": "github"
       }
