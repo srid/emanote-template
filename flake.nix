@@ -3,7 +3,7 @@
   nixConfig.extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
 
   inputs = {
-    emanote.url = "github:srid/emanote/flake-module-website";
+    emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
@@ -24,6 +24,8 @@
             # port = 8080;
           };
         };
+        packages.default = self'.packages.emanote-template;
+        apps.default = self'.apps.emanote-template;
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.nixpkgs-fmt ];
         };
