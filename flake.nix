@@ -15,20 +15,18 @@
       imports = [
         inputs.emanote.flakeModule
       ];
-      perSystem = { self', inputs', pkgs, system, ... }:
-        let
-          pkgs = nixpkgs.legacyPackages.${system};
-        in
-        {
-          emanote = {
-            package = inputs.emanote.packages.${system}.default;
-            sites."emanote-template" = {
-              path = ./content;
-            };
-          };
-          devShells.default = pkgs.mkShell {
-            buildInputs = [ pkgs.nixpkgs-fmt ];
+      perSystem = { self', inputs', pkgs, system, ... }: {
+        emanote = {
+          package = inputs.emanote.packages.${system}.default;
+          sites."emanote-template" = {
+            path = ./content;
+            pathString = "./content";
+            # port = 8080;
           };
         };
+        devShells.default = pkgs.mkShell {
+          buildInputs = [ pkgs.nixpkgs-fmt ];
+        };
+      };
     };
 }
