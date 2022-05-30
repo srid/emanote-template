@@ -15,7 +15,7 @@
       imports = [
         inputs.emanote.flakeModule
       ];
-      perSystem = { self', inputs', pkgs, system, ... }: {
+      perSystem = { self', pkgs, system, ... }: {
         emanote = {
           package = inputs.emanote.packages.${system}.default;
           sites."emanote-template" = {
