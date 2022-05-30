@@ -18,14 +18,12 @@
       perSystem = { self', pkgs, system, ... }: {
         emanote = {
           package = inputs.emanote.packages.${system}.default;
-          sites."emanote-template" = {
+          sites."default" = {
             path = ./content;
             pathString = "./content";
             # port = 8080;
           };
         };
-        packages.default = self'.packages.emanote-template;
-        apps.default = self'.apps.emanote-template;
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.nixpkgs-fmt ];
         };
