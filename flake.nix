@@ -4,33 +4,35 @@
 
   inputs = {
     emanote.url = "github:srid/emanote/master";
-    # ema.url = "github:srid/ema/multisite"; # To workaround follows bug
     nixpkgs.follows = "emanote/nixpkgs";
-    flake-utils.follows = "emanote/flake-utils";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    flake-parts.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, flake-utils, emanote, nixpkgs, ... }@inputs:
-    flake-utils.lib.eachDefaultSystem
-      (system:
+  outputs = inputs@{ self, flake-parts, nixpkgs, ... }:
+    flake-parts.lib.mkFlake { inherit self; } {
+      systems = nixpkgs.lib.systems.flakeExposed;
+      # The primed versions (self', inputs') are same as the non-primed
+      # versions, but with 'system' already applied.
+      perSystem = { self', inputs', pkgs, system, ... }:
         let
           pkgs = nixpkgs.legacyPackages.${system};
+          emanote = inputs.emanote.packages.${system}.default;
         in
         rec {
-          defautPackage = packages.default;
-          defaultApp = apps.default;
           apps = {
             default = rec {
               type = "app";
               # '' is required for escaping ${} in nix
-              script = pkgs.writeShellApplication {
+              program = (pkgs.writeShellApplication {
                 name = "emanoteRun.sh";
                 text = ''
                   set -xe
-                  export PORT="''${EMANOTE_PORT:-7072}"
-                  cd ./content && ${emanote.defaultPackage.${system}}/bin/emanote run --port "$PORT"
+                  # Use `emanote run --port=8081` if you want to run Emanote at
+                  # a particular port.
+                  cd ./content && ${emanote}/bin/emanote
                 '';
-              };
-              program = "${script}/bin/emanoteRun.sh";
+              }) + /bin/emanoteRun.sh;
             };
           };
           packages = {
@@ -50,14 +52,14 @@
               pkgs.runCommand "emanote-static-website" { }
                 ''
                   mkdir $out
-                  ${emanote.defaultPackage.${system}}/bin/emanote \
+                  ${emanote}/bin/emanote \
                   --layers "${configDir};${self}/content" \
                     gen $out
                 '';
           };
-          devShell = pkgs.mkShell {
+          devShells.default = pkgs.mkShell {
             buildInputs = [ pkgs.nixpkgs-fmt ];
           };
-        }
-      );
+        };
+    };
 }
