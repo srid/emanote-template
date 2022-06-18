@@ -29,11 +29,11 @@
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1655403104,
-        "narHash": "sha256-mDWptLdepYjqyPQmlzNXku+q8xIIDeaynwGhyK1uvaY=",
+        "lastModified": 1655589322,
+        "narHash": "sha256-NKSKR0urCjozJ7NarE8M7aUyMZQXmOCgLShUtlPtjTA=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "f1031f2393e531882311aa214de34ed53e819028",
+        "rev": "093a0fe02299f55e38357ff1bf3443e2d6d838e2",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1654330348,
-        "narHash": "sha256-jedUKLSqRk/4ToHolO7xnOuztbdDUGCSElvTi5hUGYg=",
+        "lastModified": 1655570068,
+        "narHash": "sha256-KUSd2a6KgYTHd2l3Goee/P+DrAC6n1Tau+7V68czSZU=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "6ac93cfc7f0fea4c889a609b18b3333f10091030",
+        "rev": "6dbc77b9c0477f8a9a6a9081077bb38c6a3dbb3a",
         "type": "github"
       },
       "original": {
