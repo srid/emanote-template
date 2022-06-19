@@ -18,3 +18,5 @@ template:
 
   # If you are hosting on GitLab Pages, you may want to remove this.
   urlStrategy: pretty
+
+editBaseUrl: https://github.com/srid/emanote-template/edit/master/content
