@@ -7,6 +7,10 @@ page:
 template:
   theme: red
 
+  # You can add your own variables here, like editBaseUrl.
+  # See after-note.tpl to see where editBaseUrl gets used.
+  editBaseUrl: https://github.com/srid/emanote-template/edit/master/content
+
   # Uncomment this to get neuron-style pages
   # name: /templates/layouts/note
   # layout:
@@ -18,5 +22,3 @@ template:
 
   # If you are hosting on GitLab Pages, you may want to remove this.
   urlStrategy: pretty
-
-editBaseUrl: https://github.com/srid/emanote-template/edit/master/content
