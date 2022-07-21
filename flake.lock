@@ -26,11 +26,11 @@
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1657205338,
-        "narHash": "sha256-Oa6fuz79gJz7PYdWQsGfFvET9o8taUbGvClkkC67Qgw=",
+        "lastModified": 1658368593,
+        "narHash": "sha256-oVyuEkF83O2RNoCH1D/yRT0YafCgeRXCSCnw5qTcsEw=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "69bd7031cae0a81be4e1e0083f9478ce8c8497c1",
+        "rev": "af42e8f2d20c6f02e0eae5a5bb41b6028dbc443d",
         "type": "github"
       },
       "original": {
