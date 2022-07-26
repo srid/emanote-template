@@ -27,7 +27,10 @@
           };
         };
         devShells.default = pkgs.mkShell {
-          buildInputs = [ pkgs.nixpkgs-fmt ];
+          buildInputs = [
+            pkgs.nixpkgs-fmt
+            pkgs.zk
+          ];
         };
       };
     };
