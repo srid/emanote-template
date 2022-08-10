@@ -3,16 +3,16 @@
     "ema": {
       "flake": false,
       "locked": {
-        "lastModified": 1658331162,
-        "narHash": "sha256-13PYisWFUbrS+HOegqBMA1SRuG5fZNOVXccAlfOIylY=",
+        "lastModified": 1659891375,
+        "narHash": "sha256-UDI8AACQf84Mc8V//6KeTGj9Djlsj291gDslHMEIX48=",
         "owner": "srid",
         "repo": "ema",
-        "rev": "67da7235a14e93e468112bb8d2217fb0e092304b",
+        "rev": "b052ad1b2f5d483ff3ed3b664df8ce419345d852",
         "type": "github"
       },
       "original": {
         "owner": "srid",
-        "ref": "multisite",
+        "ref": "master",
         "repo": "ema",
         "type": "github"
       }
@@ -26,11 +26,11 @@
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1658677541,
-        "narHash": "sha256-obwmILHkC7oq5/Yuux2No5bHNVvgAtySBZpoNnUoBv0=",
+        "lastModified": 1659891460,
+        "narHash": "sha256-A1yITwFF9to3HsBEC2XeLa/9+/BSgN9aT/YrYjSLs9s=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "4f49adbdbb3034688f75ce20493e98f48aa9810f",
+        "rev": "d2ae1013094537f76692edc910bf36b2fb543107",
         "type": "github"
       },
       "original": {
