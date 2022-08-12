@@ -43,3 +43,7 @@ nix run nixpkgs#nodePackages.live-server -- ./result
 ## GitHub Pages
 
 GitHub Actions CI is responsible for deploying to GitHub Pages. See `.github/workflows/publish.yaml`.
+
+## Alternatives
+
+The Github Actions jobs relies on Docker. For a purely Nix based approach, see https://github.com/srid/srid/blob/master/.github/workflows/publish.yaml
