@@ -13,7 +13,7 @@ Click the "Use this template" green button on Github, and in the resulting repos
 
 If deploying using GitHub Pages, also:
 
-1. Change `.deploy/github/index.yaml` to change the `baseUrl` (if your repository is named differently or you are using a CNAME). If you are using CNAME (with no sub-path), then you may get rid of the `.deploy/github` layer entirely (be sure to update `.github/workflows/publish.yaml` accordingly).
+1. Change `flake.nix` to set the `baseUrl` (if your repository is named differently or you are using a CNAME).
 
 Checkout [examples](https://emanote.srid.ca/examples) and [demo](https://emanote.srid.ca/demo) for next steps.
 
@@ -43,7 +43,3 @@ nix run nixpkgs#nodePackages.live-server -- ./result
 ## GitHub Pages
 
 GitHub Actions CI is responsible for deploying to GitHub Pages. See `.github/workflows/publish.yaml`.
-
-## Alternatives
-
-The Github Actions jobs relies on Docker. For a purely Nix based approach, see https://github.com/srid/srid/blob/master/.github/workflows/publish.yaml
