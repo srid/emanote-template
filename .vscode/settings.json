@@ -21,7 +21,10 @@
     "files.associations": {
         "*.tpl": "html"
     },
-    "pasteImage.insertPattern": "![[${imageFilePath}]]"
+    "pasteImage.insertPattern": "![[${imageFilePath}]]",
+    "search.exclude": {
+        ".direnv": true
+    }
     // If use Git, these might be interesting:
     // "git.autofetch": true,
     // "git.postCommitCommand": "push"
