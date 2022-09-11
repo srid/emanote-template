@@ -23,7 +23,7 @@
             path = ./content;
             pathString = "./content";
             # port = 8080;
-            # baseUrl = "/mynotes";
+            baseUrl = "/emanote-template";
             # prettyUrls = true;
           };
         };
