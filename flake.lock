@@ -27,11 +27,11 @@
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1664067359,
-        "narHash": "sha256-HH4L3lJLIaIbFanA7NWT+mwf2pSEyYIgCCS0vY7iwdo=",
+        "lastModified": 1664240759,
+        "narHash": "sha256-vrF0MIaxHFXyjvAeCDg6L5JDsydb/VDUdKqOyNE0Dy8=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "3df5115bad9f6da0d3a1c00e42de6dd0977b97db",
+        "rev": "c6f87e7f52f058626ee88e32831048cbebb62c5d",
         "type": "github"
       },
       "original": {
@@ -68,11 +68,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1663686189,
-        "narHash": "sha256-cgWGo0SLM4RX0DqodeFHsU0PRGlmz6AOSF1lmX21bvg=",
+        "lastModified": 1664385320,
+        "narHash": "sha256-uSCHb9RUqHRjTpI8OzyaUuHckFnnxwZqlXEuo+yUpYQ=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "f17e9dba098c0a7bca10029bec5384fd6425c157",
+        "rev": "45298bd207b26e1bcd030a0bb075aa2da29f8e30",
         "type": "github"
       },
       "original": {
