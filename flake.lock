@@ -24,14 +24,14 @@
         "haskell-flake": "haskell-flake",
         "heist-extra": "heist-extra",
         "nixpkgs": "nixpkgs_2",
-        "tailwind-haskell": "tailwind-haskell"
+        "tailwind": "tailwind"
       },
       "locked": {
-        "lastModified": 1665932761,
-        "narHash": "sha256-b2MVVX5tBTBNIcm2xC5J+Wx2nI+yJRmKQ12jOvHRSxI=",
+        "lastModified": 1665933991,
+        "narHash": "sha256-IkZZfYypW4mzKNYlcO9PTt80ZJR2BpVhuYEzQcXeml4=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "e74f25d7f55a01d0e2aa8a897ae4c0bcd763293f",
+        "rev": "65dd75053674aaf4fc36c0ad689938c8d6158e2e",
         "type": "github"
       },
       "original": {
@@ -73,22 +73,6 @@
       "original": {
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "type": "github"
-      }
-    },
-    "flake-utils": {
-      "locked": {
-        "lastModified": 1652776076,
-        "narHash": "sha256-gzTw/v1vj4dOVbpBSJX4J0DwUR6LIyXo7/SuuTJp1kM=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "04c1b180862888302ddfb2e3ad9eaa63afc60cf8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "ref": "v1.0.0",
-        "repo": "flake-utils",
         "type": "github"
       }
     },
@@ -183,14 +167,8 @@
         ]
       }
     },
-    "tailwind-haskell": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "emanote",
-          "nixpkgs"
-        ]
-      },
+    "tailwind": {
+      "flake": false,
       "locked": {
         "lastModified": 1665932648,
         "narHash": "sha256-YM/6pnBi8MymRHrPheiKrtL9FZPLeeTp/evd3O/0CkI=",
