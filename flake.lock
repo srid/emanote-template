@@ -23,15 +23,15 @@
         "flake-parts": "flake-parts",
         "haskell-flake": "haskell-flake",
         "heist-extra": "heist-extra",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_2",
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1665767706,
-        "narHash": "sha256-WViyr6LB/UDSo7IXxwMxwLaRq0jON7HuzNyDPfgPN5w=",
+        "lastModified": 1665932761,
+        "narHash": "sha256-b2MVVX5tBTBNIcm2xC5J+Wx2nI+yJRmKQ12jOvHRSxI=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "dbb6ffb0e72f31005f748a8a40834f94ed40a95a",
+        "rev": "e74f25d7f55a01d0e2aa8a897ae4c0bcd763293f",
         "type": "github"
       },
       "original": {
@@ -42,10 +42,7 @@
     },
     "flake-parts": {
       "inputs": {
-        "nixpkgs": [
-          "emanote",
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
         "lastModified": 1661009076,
@@ -128,16 +125,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1662096612,
-        "narHash": "sha256-R+Q8l5JuyJryRPdiIaYpO5O3A55rT+/pItBrKcy7LM4=",
-        "owner": "nixos",
+        "lastModified": 1665848363,
+        "narHash": "sha256-3Jow1YxzPtQnck1bAAvbVxgRH4gNnkIdw871Vm6UtAU=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "21de2b973f9fee595a7a1ac4693efff791245c34",
+        "rev": "83b198a2083774844962c854f811538323f9f7b1",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixpkgs-unstable",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -156,6 +153,22 @@
         "dir": "lib",
         "owner": "NixOS",
         "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1662096612,
+        "narHash": "sha256-R+Q8l5JuyJryRPdiIaYpO5O3A55rT+/pItBrKcy7LM4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "21de2b973f9fee595a7a1ac4693efff791245c34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -179,11 +192,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1658431129,
-        "narHash": "sha256-AtTxP0AMXdeU0ZTJP5R1lCtx5az3ejrmGP1klEdu1qU=",
+        "lastModified": 1665932648,
+        "narHash": "sha256-YM/6pnBi8MymRHrPheiKrtL9FZPLeeTp/evd3O/0CkI=",
         "owner": "srid",
         "repo": "tailwind-haskell",
-        "rev": "09a102164b1a4559892277ff38efdc9b949c5433",
+        "rev": "7aaaf2282d02846890904f1c23610ddea98d91b6",
         "type": "github"
       },
       "original": {
