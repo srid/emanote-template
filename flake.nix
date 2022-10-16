@@ -6,7 +6,6 @@
     emanote.url = "github:EmaApps/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    flake-parts.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs@{ self, flake-parts, nixpkgs, ... }:
