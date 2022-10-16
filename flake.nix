@@ -20,8 +20,8 @@
           # By default, the 'emanote' flake input is used.
           # package = inputs.emanote.packages.${system}.default;
           sites."default" = {
-            path = ./content;
-            pathString = "./content";
+            layers = [ ./content ];
+            layersString = [ "./content" ];
             # port = 8080;
             baseUrl = "/emanote-template/";  # Change to "/" (or remove it entirely) if using CNAME
             # prettyUrls = true;
