@@ -23,4 +23,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./result/
-          # cname: yoursite.com (if setting this, adjust .deploy/github/index.yaml accordingly; see README.md)
+          # cname: yoursite.com
