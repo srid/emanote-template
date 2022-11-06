@@ -1,17 +1,34 @@
 {
   "nodes": {
+    "commonmark-wikilink": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667660671,
+        "narHash": "sha256-3Z7TJKCNCu8N1KPmUZgXOHMghPH3qEpHiXP1g2UPTlE=",
+        "owner": "srid",
+        "repo": "commonmark-wikilink",
+        "rev": "6c249d1e1dd931e730fa9ecd803610da83d3fc38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srid",
+        "repo": "commonmark-wikilink",
+        "type": "github"
+      }
+    },
     "emanote": {
       "inputs": {
+        "commonmark-wikilink": "commonmark-wikilink",
         "flake-parts": "flake-parts",
         "haskell-flake": "haskell-flake",
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1667078658,
-        "narHash": "sha256-Y/MgWpQSlmgMNMS8s8sSPLI5YG+I3s83UJNerWKm8/s=",
+        "lastModified": 1667744765,
+        "narHash": "sha256-zZodWqv7F4dKSjFx81SRoAtfp5fkbPcou4EwiowWcHU=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "792962c6bb65b8ac282d0b60bf68a740ae54b133",
+        "rev": "cc65b533e780f902ca223268c93f5423c489182a",
         "type": "github"
       },
       "original": {
