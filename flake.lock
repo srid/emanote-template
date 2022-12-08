@@ -26,11 +26,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1670278882,
-        "narHash": "sha256-nonbsbJ5hnnh1Byc7WvYaBqN04exys3ywlfQ8+DnwRE=",
+        "lastModified": 1670473365,
+        "narHash": "sha256-DYtx2MA6cQJgoftqOhyjq2pTBWDNbNLdNfy5C6i2JHM=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "9deff5c4f890eb84494420b486e9498d1c001359",
+        "rev": "1bae84d55525d1ceed770ee90b932760a25cf6c9",
         "type": "github"
       },
       "original": {
@@ -62,11 +62,11 @@
         "nixpkgs-lib": "nixpkgs-lib_2"
       },
       "locked": {
-        "lastModified": 1668450977,
-        "narHash": "sha256-cfLhMhnvXn6x1vPm+Jow3RiFAUSCw/l1utktCw5rVA4=",
+        "lastModified": 1670441596,
+        "narHash": "sha256-+T487QnluBT5F9tVk0chG/zzv+9zzTrx3o7rlOBK7ps=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "d591857e9d7dd9ddbfba0ea02b43b927c3c0f1fa",
+        "rev": "8d0e2444ab05f79df93b70e5e497f8c708eb6b9b",
         "type": "github"
       },
       "original": {
