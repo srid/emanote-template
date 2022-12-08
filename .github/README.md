@@ -8,8 +8,8 @@ See https://emanote.srid.ca/start/resources/emanote-template for details.
 
 Click the "Use this template" green button on Github, and in the resulting repository make the following modifications,
 
-1. Change `content/index.yaml` to use your site's title (and set the same in `content/index.md`) and a suitable edit URL.
-1. Start adding notes to `./content` (where all notes should live).
+1. Change `index.yaml` to use your site's title (and set the same in `index.md`) and a suitable edit URL.
+1. Start adding `.md` notes at repository root
 
 If deploying using GitHub Pages, also:
 
