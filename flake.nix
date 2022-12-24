@@ -1,9 +1,9 @@
 {
-  nixConfig.extra-substituters = "https://cache.garnix.io";
-  nixConfig.extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
+  nixConfig.extra-substituters = "https://cache.srid.ca";
+  nixConfig.extra-trusted-public-keys = "cache.srid.ca:8sQkbPrOIoXktIwI0OucQBXod2e9fDjjoEZWn8OXbdo=";
 
   inputs = {
-    emanote.url = "github:EmaApps/emanote";
+    emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
@@ -31,5 +31,8 @@
         };
         formatter = pkgs.nixpkgs-fmt;
       };
+
+      # CI configuration
+      flake.herculesCI.ciSystems = [ "x86_64-linux" "aarch64-darwin" ];
     };
 }
