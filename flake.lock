@@ -25,11 +25,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1675009886,
-        "narHash": "sha256-GYngRNs59haavPfvmjW9oInVDifFvUwPGM7GzmS4jvA=",
+        "lastModified": 1675011228,
+        "narHash": "sha256-SCYow151vDxW/BEUu2g8pVG7hPrn8iHfy9QpB2R7nYg=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "01ec7ca43e524b0dd33fabfdda5283d8462452da",
+        "rev": "1a24258057e18c3b03b2465a33f4f56aca9d48c0",
         "type": "github"
       },
       "original": {
