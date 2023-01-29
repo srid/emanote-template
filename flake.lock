@@ -44,11 +44,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1674226352,
-        "narHash": "sha256-8UmDkZ4PsAezrAlrJ9fAuN6Z7Fs6Mfc+G5Sn1Zb9JgA=",
+        "lastModified": 1674913110,
+        "narHash": "sha256-IRTt+oRdWH7J/tmXywkOLEjdTFPxKpRuK7StcubS9sE=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "a041483e055cb577db4bfca43bb4d528bd3626d3",
+        "rev": "15865e7caf117a9979d27a5b5a1c41b62b0b01a4",
         "type": "github"
       },
       "original": {
@@ -80,11 +80,11 @@
         "nixpkgs-lib": "nixpkgs-lib_2"
       },
       "locked": {
-        "lastModified": 1673362319,
-        "narHash": "sha256-Pjp45Vnj7S/b3BRpZEVfdu8sqqA6nvVjvYu59okhOyI=",
+        "lastModified": 1674771137,
+        "narHash": "sha256-Zpk1GbEsYrqKmuIZkx+f+8pU0qcCYJoSUwNz1Zk+R00=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "82c16f1682cf50c01cb0280b38a1eed202b3fe9f",
+        "rev": "7c7a8bce3dffe71203dcd4276504d1cb49dfe05f",
         "type": "github"
       },
       "original": {
