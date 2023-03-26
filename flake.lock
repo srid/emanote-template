@@ -1,5 +1,20 @@
 {
   "nodes": {
+    "cachix-push": {
+      "locked": {
+        "lastModified": 1678223023,
+        "narHash": "sha256-nZVrSAyh9IAi75UIAy9YNR6Wbdlxv0AHD6A9/DqIVfw=",
+        "owner": "juspay",
+        "repo": "cachix-push",
+        "rev": "7f284a373d811ac397a25b113025b34ac249f489",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juspay",
+        "repo": "cachix-push",
+        "type": "github"
+      }
+    },
     "check-flake": {
       "locked": {
         "lastModified": 1662502605,
@@ -62,6 +77,7 @@
     },
     "emanote": {
       "inputs": {
+        "cachix-push": "cachix-push",
         "check-flake": "check-flake",
         "ema": "ema",
         "flake-parts": "flake-parts",
@@ -72,11 +88,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1677760030,
-        "narHash": "sha256-uCwWB1ExijUlkJquGtH4Fg35pI5gGEOT2EZK9+ftayg=",
+        "lastModified": 1679443974,
+        "narHash": "sha256-4Qx+d55HQ3ES6K38XvnJgDCoGfnojYbDhxKSQr86JPE=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "f240333f9fd60d088b9a5b32632d8bbc996c080c",
+        "rev": "ddb4d8cd2213ea350fe4127219f1b17a0adfd856",
         "type": "github"
       },
       "original": {
