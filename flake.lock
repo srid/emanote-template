@@ -58,7 +58,6 @@
         "ema": "ema",
         "flake-parts": "flake-parts",
         "flake-root": "flake-root",
-        "flake-schemas": "flake-schemas",
         "haskell-flake": "haskell-flake",
         "heist-extra": "heist-extra",
         "nixpkgs": "nixpkgs",
@@ -67,11 +66,11 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1701214770,
-        "narHash": "sha256-5WEoJYPRYD9N0qQ23nao6irzKg+SNH4DY3lTHHdBmSU=",
+        "lastModified": 1701981204,
+        "narHash": "sha256-lOFJYJdWt8qYhwuDfGAXYspwgO5szwyg9SvaZsh0fGw=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "ea2dca29a92430572048eb5ad5f018b0e66c42bc",
+        "rev": "2c2588c35e1d3fee6595f052281839c8cd27ab81",
         "type": "github"
       },
       "original": {
@@ -110,21 +109,6 @@
       "original": {
         "owner": "srid",
         "repo": "flake-root",
-        "type": "github"
-      }
-    },
-    "flake-schemas": {
-      "locked": {
-        "lastModified": 1693615523,
-        "narHash": "sha256-LeyH24etXCxNJviWptyLy2DPT9xt+oOs/zE66To1iPY=",
-        "owner": "DeterminateSystems",
-        "repo": "flake-schemas",
-        "rev": "8940e872c4f8c7cd7d0a1ec169fa0a24697b1f1c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "DeterminateSystems",
-        "repo": "flake-schemas",
         "type": "github"
       }
     },
