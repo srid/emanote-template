@@ -1,23 +1,7 @@
 {
   "nodes": {
-    "check-flake": {
-      "locked": {
-        "lastModified": 1662502605,
-        "narHash": "sha256-jAT55UhabAxLAVGanxjnNdzH2/oX2ZjLsL4i2jPIP+g=",
-        "owner": "srid",
-        "repo": "check-flake",
-        "rev": "48a17393ed4fcd523399d6602c283775b5127295",
-        "type": "github"
-      },
-      "original": {
-        "owner": "srid",
-        "repo": "check-flake",
-        "type": "github"
-      }
-    },
     "ema": {
       "inputs": {
-        "check-flake": "check-flake",
         "flake-parts": [
           "emanote",
           "flake-parts"
@@ -40,15 +24,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1691619338,
-        "narHash": "sha256-Nxx184m3caxW5z/EMjVZyuTGi8IPH1qTwMAzJBblWUA=",
+        "lastModified": 1702334080,
+        "narHash": "sha256-zrtzyLrSORxtocLMji5U9p4pDicMulOqgsuiB4LCu1o=",
         "owner": "srid",
         "repo": "ema",
-        "rev": "de01c397e050434f41fc9a12fc40de264dc62c21",
+        "rev": "33f4cf31ace7e612e78ad25f5fc45089745ab644",
         "type": "github"
       },
       "original": {
         "owner": "srid",
+        "ref": "no-ws",
         "repo": "ema",
         "type": "github"
       }
@@ -66,11 +51,11 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1701981204,
-        "narHash": "sha256-lOFJYJdWt8qYhwuDfGAXYspwgO5szwyg9SvaZsh0fGw=",
+        "lastModified": 1702500323,
+        "narHash": "sha256-tJfwplUh1macIx4eNTgImvIYI/DzZA2Ed6aIOQ4ZrQ0=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "2c2588c35e1d3fee6595f052281839c8cd27ab81",
+        "rev": "524f891a022824d0988375a05d5f08526c51f516",
         "type": "github"
       },
       "original": {
