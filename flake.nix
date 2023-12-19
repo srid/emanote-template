@@ -5,7 +5,7 @@
   };
 
   inputs = {
-    emanote.url = "github:srid/emanote";
+    emanote.url = "github:shivaraj-bh/emanote/update-nixpkgs";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.follows = "emanote/flake-parts";
   };
@@ -32,6 +32,26 @@
           ];
         };
         formatter = pkgs.nixpkgs-fmt;
+      };
+      # NOTE: The `flake.templates` attribute is only needed if in `emanote-template` repository.
+      flake.templates = {
+        default = {
+          description = "A simple flake.nix template for emanote";
+          path = builtins.path { path = self; filter = path: _: baseNameOf path == "flake.nix"; };
+        };
+        example = let fs = inputs.nixpkgs.lib.fileset; in {
+          description = "An example emanote site with VSCode integration and Github actions workflow";
+          path = builtins.toString (fs.toSource {
+            root = ./.;
+            fileset = fs.unions [
+              ./flake.nix
+              ./index.yaml
+              ./index.md
+              ./.vscode
+              ./.github
+            ];
+          });
+        };
       };
     };
 }
