@@ -51,16 +51,15 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1702964150,
-        "narHash": "sha256-cAl4ZDFY4SW3Ly2aRdBd05rqkFyPuQUXhgVGttfzSDU=",
-        "owner": "shivaraj-bh",
+        "lastModified": 1703012200,
+        "narHash": "sha256-iGSNUktkmUmrgLKwnAwGuwlnResHRvLZKqZSkncBqj0=",
+        "owner": "srid",
         "repo": "emanote",
-        "rev": "a52d953858dd51152cfea5912959b3fd04ccbc14",
+        "rev": "48eabd0a508e7991d3f36fb08e968a6b5585435e",
         "type": "github"
       },
       "original": {
-        "owner": "shivaraj-bh",
-        "ref": "update-nixpkgs",
+        "owner": "srid",
         "repo": "emanote",
         "type": "github"
       }
