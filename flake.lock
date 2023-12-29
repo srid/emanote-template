@@ -51,11 +51,11 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1703012200,
-        "narHash": "sha256-iGSNUktkmUmrgLKwnAwGuwlnResHRvLZKqZSkncBqj0=",
+        "lastModified": 1703792616,
+        "narHash": "sha256-mhQ/gvjzBk9efVXHPp4EPmLw2ww7kdwieAfjemT/z3Q=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "48eabd0a508e7991d3f36fb08e968a6b5585435e",
+        "rev": "486273f3d40c1b01b820bafdfa4c9f2020b98306",
         "type": "github"
       },
       "original": {
