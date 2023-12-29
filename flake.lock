@@ -41,6 +41,7 @@
     "emanote": {
       "inputs": {
         "ema": "ema",
+        "emanote-template": [],
         "flake-parts": "flake-parts",
         "flake-root": "flake-root",
         "haskell-flake": "haskell-flake",
@@ -51,11 +52,11 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1703792616,
-        "narHash": "sha256-mhQ/gvjzBk9efVXHPp4EPmLw2ww7kdwieAfjemT/z3Q=",
+        "lastModified": 1703878530,
+        "narHash": "sha256-s3jjsoBJynDcNrfQSNPApdXt9zyNL2Vfp9vb9T/HA9s=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "486273f3d40c1b01b820bafdfa4c9f2020b98306",
+        "rev": "4ebfa67f3d5ab795fbe04f663f767708527d4980",
         "type": "github"
       },
       "original": {
@@ -198,11 +199,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1693468138,
-        "narHash": "sha256-DddblCahuTW8K0ncPOheTlG3igE8b15LJjafF1PWhOo=",
+        "lastModified": 1702979157,
+        "narHash": "sha256-RnFBbLbpqtn4AoJGXKevQMCGhra4h6G2MPcuTSZZQ+g=",
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "rev": "6930a5ba0a722385baf273885a03f561dcb1af67",
+        "rev": "2961375283668d867e64129c22af532de8e77734",
         "type": "github"
       },
       "original": {
