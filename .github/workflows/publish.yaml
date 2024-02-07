@@ -8,14 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: nixbuild/nix-quick-install-action@v21
+      - uses: cachix/install-nix-action@v22
         with:
-          nix_conf: |
-            experimental-features = nix-command flakes
+          extra_nix_config: |
+            trusted-public-keys = cache.srid.ca:8sQkbPrOIoXktIwI0OucQBXod2e9fDjjoEZWn8OXbdo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://cache.srid.ca https://cache.nixos.org/
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-      - uses: cachix/cachix-action@v11
-        with:
-          name: srid
       - name: Build the website (Nix) 🔧
         run: |
           nix build -j 4
