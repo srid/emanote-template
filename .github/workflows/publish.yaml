@@ -12,7 +12,7 @@ jobs:
         with:
           extra_nix_config: |
             trusted-public-keys = cache.srid.ca:8sQkbPrOIoXktIwI0OucQBXod2e9fDjjoEZWn8OXbdo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
-            substituters = https://cache.srid.ca https://cache.nixos.org/
+            substituters = https://cache.srid.ca?priority=40 https://cache.nixos.org/
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Build the website (Nix) 🔧
         run: |
