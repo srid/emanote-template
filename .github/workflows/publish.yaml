@@ -3,11 +3,12 @@ on:
   push:
     branches:
       - master
+      - gh-action
 jobs:
-  emanote:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: DeterminateSystems/nix-installer-action@main
         with:
           extra-conf: |
@@ -16,10 +17,16 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Build the website (Nix) 🔧
         run: |
-          nix build -j 4
-      - name: Deploy to gh-pages 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./result/
-          # cname: yoursite.com
+          nix build -o ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
