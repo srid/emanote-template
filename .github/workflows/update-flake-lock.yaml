@@ -9,14 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Nix
-        uses: cachix/install-nix-action@v17
+      - uses: cachix/install-nix-action@v25
         with:
+          nix_path: nixpkgs=channel:nixos-unstable
           extra_nix_config: |
+            trusted-public-keys = cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://cache.garnix.io?priority=41 https://cache.nixos.org/
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@main
         with:
-          pr-title: "Update flake.lock" # Title of PR to be created
+          pr-title: "nix: Update flake.lock" # Title of PR to be created
           pr-labels: |                  # Labels to be set on the PR
             automated
