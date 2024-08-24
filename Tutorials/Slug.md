@@ -20,5 +20,5 @@ slug: method
 ---
 ```
 
-This makes Emantoe use `/method` as the URL path for this note. Without this, by default, Emanote would use `/free/Actualism%20Method`.
+This makes Emanote use `/method` as the URL path for this note. Without this, by default, Emanote would use `/free/Actualism%20Method`.
 
