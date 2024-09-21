@@ -29,7 +29,7 @@ nix run
 To update Emanote version in flake.nix:
 
 ```sh
-nix flake lock --update-input emanote
+nix flake update emanote
 ```
 
 To build the static website via Nix:
