@@ -19,11 +19,11 @@
     "commonmark-wikilink": {
       "flake": false,
       "locked": {
-        "lastModified": 1711394028,
-        "narHash": "sha256-eu5gMmgRz6Y51TBCaB26uJKNN3z1LRfUcTV4+PMy5Gw=",
+        "lastModified": 1737766991,
+        "narHash": "sha256-F9u4wWyb53eir+DqITrCopwF7HT8PRyabUDYpOGFj38=",
         "owner": "srid",
         "repo": "commonmark-wikilink",
-        "rev": "57dcf665082ffc1b6f35a427e203ed115821b15c",
+        "rev": "58845227efba248fca750baf374b2de080ad1f63",
         "type": "github"
       },
       "original": {
@@ -35,15 +35,16 @@
     "ema": {
       "flake": false,
       "locked": {
-        "lastModified": 1724260267,
-        "narHash": "sha256-pxTlvpK0l7pek43FIz6KYAazK0BWbnuBJSFrcShVoWE=",
+        "lastModified": 1737321961,
+        "narHash": "sha256-+iLtdzwVv0wyTdFfk4XFJAZPmA9Of7stYbo2sTBzN7M=",
         "owner": "srid",
         "repo": "ema",
-        "rev": "16e2752267cd49027e281409daa25b6ecba68fd3",
+        "rev": "74b619f9865748a690fc7cf1b865fec801daaa97",
         "type": "github"
       },
       "original": {
         "owner": "srid",
+        "ref": "idiomorph",
         "repo": "ema",
         "type": "github"
       }
@@ -64,11 +65,11 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1736358771,
-        "narHash": "sha256-6vRvRWoYAKVquR/3w6ztay1f4xusyV8ms2V8Zp/N6wo=",
+        "lastModified": 1737767162,
+        "narHash": "sha256-za0IgDfUXRQJ8DEPPgP00fEpivg6EldZpP2LNBgG0Ng=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "708306717d9d9fd0edb4aebe68f7ffea22ddb7ec",
+        "rev": "4005b3fdf14eff075be30a6bd506759ed0cd78ff",
         "type": "github"
       },
       "original": {
@@ -131,11 +132,11 @@
     "heist-extra": {
       "flake": false,
       "locked": {
-        "lastModified": 1710541479,
-        "narHash": "sha256-9e4U78eutom6D3EJqsCdV8iQxNgYA/pi001r5CZdm0A=",
+        "lastModified": 1737313814,
+        "narHash": "sha256-WCXhs/xhCR4CKBEadQjqqgUb47bLzDY7P7oL5cSgDHc=",
         "owner": "srid",
         "repo": "heist-extra",
-        "rev": "589b7636f620dcdfc0dc07dea720feed1ab3e0fa",
+        "rev": "6f73e000a34b7c054b516b9504b5a7ed08ce6a2d",
         "type": "github"
       },
       "original": {
