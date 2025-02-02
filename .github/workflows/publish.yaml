@@ -21,13 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/nix-installer-action@main
-        with:
-          extra-conf: |
-            trusted-public-keys = cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
-            substituters = https://cache.garnix.io?priority=41 https://cache.nixos.org/
       - name: Build the website (Nix) 🔧
         run: |
-          nix build -o ./_site
+          nix --accept-flake-config build -o ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   deploy:
