@@ -9,7 +9,7 @@ See https://emanote.srid.ca/start/resources/emanote-template for details.
 Click the "Use this template" green button on Github, and in the resulting repository make the following modifications,
 
 1. Change `index.yaml` to use your site's title (and set the same in `index.md`) and a suitable edit URL.
-1. Start adding `.md` notes at repository root (you can use VSCode or [Obsidian](https://obsidian.md/))
+1. Start adding `.md` notes at repository root (you can use VSCode or [Obsidian](https://emanote.srid.ca/obsidian))
 
 If deploying using GitHub Pages, also:
 
