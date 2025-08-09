@@ -19,11 +19,16 @@
         emanote = {
           # By default, the 'emanote' flake input is used.
           # package = inputs.emanote.packages.${system}.default;
-          sites."default" = {
-            layers = [{ path = ./.; pathString = "."; }];
-            # port = 8080;
-            baseUrl = "/emanote-template/"; # Change to "/" (or remove it entirely) if using CNAME
-            # prettyUrls = true;
+          sites = rec {
+            default = {
+              layers = [{ path = ./.; pathString = "."; }];
+              # port = 8080;
+            };
+            # Optimized for deploying to https://<user>.github.io/<repo-name> URLs
+            github-io = default // {
+              check = false;
+              extraConfig.template.baseUrl = "/emanote-template/";
+            };
           };
         };
         devShells.default = pkgs.mkShell {
