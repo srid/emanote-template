@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - github-io
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -23,7 +24,7 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
       - name: Build the website (Nix) 🔧
         run: |
-          nix --accept-flake-config build -o ./_site
+          nix --accept-flake-config build .#github-io -o ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   deploy:
