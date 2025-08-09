@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - github-io
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
