@@ -1,7 +1,7 @@
 {
   nixConfig = {
-    extra-substituters = "https://cache.srid.ca";
-    extra-trusted-public-keys = "cache.srid.ca:EGydqsWFaTZeW6vsXnOHclTXrmJ58gq/bkVYhRpuzQ8=";
+    extra-substituters = "https://cache.nixos.asia/oss";
+    extra-trusted-public-keys = "oss:KO872wNJkCDgmGN3xy9dT89WAhvv13EiKncTtHDItVU=";
   };
 
   inputs = {
