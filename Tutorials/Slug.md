@@ -2,7 +2,13 @@
 page:
   headHtml: |
     <snippet var="js.highlightjs" />
+
+# https://emanote.srid.ca/toc
+template:
+  toc:
+    enable: true
 ---
+
 By default the filesystem path is used to determine the note URL. You can override this using the `slug` frontmatter metadata.
 
 ## Overriding the URL
