@@ -20,6 +20,8 @@
           # By default, the 'emanote' flake input is used.
           # package = inputs.emanote.packages.${system}.default;
           sites = rec {
+            # For available options, see:
+            # https://github.com/srid/emanote/blob/master/nix/modules/flake-parts/flake-module/site/default.nix
             default = {
               layers = [{ path = ./.; pathString = "."; }];
               # port = 8080;
