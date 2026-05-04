@@ -1,8 +1,4 @@
 ---
-page:
-  headHtml: |
-    <snippet var="js.highlightjs" />
-
 # https://emanote.srid.ca/toc
 template:
   toc:
